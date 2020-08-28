@@ -31,7 +31,6 @@ describe './lib/tic_tac_toe.rb' do
         game.instance_variable_set(:@board, board)
 
         output = capture_puts{ game.display_board }
-
         expect(output).to include(" X | X | X ")
         expect(output).to include("-----------")
         expect(output).to include(" X | O | O ")
